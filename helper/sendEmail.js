@@ -5,7 +5,7 @@ require('dotenv').config()
 async function sendEmail(email, message, subject) {
   try {
     var transport = nodemailer.createTransport({
-      host: smtp.mailtrap.io ,
+      host: "smtp.mailtrap.io" ,
       port: 2525,
       secure: false,
       auth: {
